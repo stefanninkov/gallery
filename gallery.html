@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>Gallery Snapshot Example</title>
+	</head>
+	<body>
+		<div id="page-wrap">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html"><span class="fas fa-home"></span></a></li>
+					<li><a href="gallery.html" class="active"><span class="fas fa-camera-retro"></span></a></li>
+					<!-- <li><button><span class="fas fa-sync-alt fa-spin"></span></button></li> -->
+				</ul>
+			</nav>
+			<!-- Main -->
+			<section id="main">
+				<!-- Gallery -->
+				<section id="gallery">
+					<div class="buttons">
+						<h1>Gallery</h1>
+						<ul class="tabs">
+							<li>
+								<button><a href="#" data-tag="all">All</a></button>
+							</li>
+							<li>
+								<button><a href="#" data-tag="people">People</a></button>
+							</li>
+							<li>
+								<button><a href="#" data-tag="places">Places</a></button>
+							</li>
+							<li>
+								<button><a href="#" data-tag="things">Things</a></button>
+							</li>
+						</ul>
+					</div>
+					<div class="content fade-in">
+						<div class="media all people">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/01.jpg">
+								<img src="images/thumbs/01.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all people">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/02.jpg">
+								<img src="images/thumbs/02.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all people">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/03.jpg">
+								<img src="images/thumbs/03.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all people">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/04.jpg">
+								<img src="images/thumbs/04.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all places">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/05.jpg">
+								<img src="images/thumbs/05.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all places">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/06.jpg">
+								<img src="images/thumbs/06.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all places">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/07.jpg">
+								<img src="images/thumbs/07.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all places">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/08.jpg">
+								<img src="images/thumbs/08.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all things">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/09.jpg">
+								<img src="images/thumbs/09.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all things">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/10.jpg">
+								<img src="images/thumbs/10.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all things">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/11.jpg">
+								<img src="images/thumbs/11.jpg" alt="">
+							</a>
+						</div>
+						<div class="media all things">
+							<a class="lightbox" data-fancybox="group" href="images/fulls/12.jpg">
+								<img src="images/thumbs/12.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- Footer -->
+				<footer id="footer">
+					<section id="about">
+						<h1>About Us</h1>
+						<p>Mus sed interdum nunc dictum rutrum scelerisque erat a parturient condimentum potenti dapibus vestibulum condimentum per tristique porta. Torquent a ut consectetur a vel ullamcorper a commodo a mattis ipsum class quam sed eros vestibulum quisque a eu nulla scelerisque a elementum vestibulum.</p>
+						<div class="icons">
+							<h2>Follow Us</h2>
+							<ul>
+								<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+								<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+								<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="contact">
+						<h1>Contact Me</h1>
+						<form action="#">
+							<div id="fields">
+								<div class="field">
+									<label for="name">Name:</label><br>
+									<input type="text" id="name" name="name" placeholder="Name">
+								</div>
+								<div class="field">
+									<label for="name">Email:</label><br>
+									<input type="text" id="email" name="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="area">
+								<label for="message">Message:</label><br>
+								<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+								<button type="submit">Send Message</button>
+							</div>
+						</form>
+					</section>
+				</footer>
+			</section>
+			
+		</div>
+		<!-- JS -->
+		<script src="assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+	</body>
+</html>

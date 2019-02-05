@@ -1,0 +1,338 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  }
+body {
+	display: flex;
+	padding: 0;
+ 	margin: 0;
+}
+section {
+	display: block;
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  animation-duration:1.5s;
+}
+#page-wrap {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+#main {
+	width: 100%;
+	overflow: hidden;
+}
+#nav {
+	width: 2em;
+    background-color: #000000;
+    font-size: 2em;
+    position: relative;
+}
+	#nav ul {
+		position: fixed;
+	    padding: 0;
+	    margin: 0;
+	}
+	#nav ul li {
+		width: 1.8em;
+	    padding: 0;
+	    text-align: center;
+	    margin: 0.5em 0;
+	}
+	#nav ul li a {
+		color: rgba(255, 255, 255, 0.5);
+		text-decoration: none;
+	}
+		#nav ul li a:hover {
+			color: white;
+		}
+
+		#nav ul li a.active {
+			color: #19B5FE;
+		}
+	#nav ul li button {
+		background-color: transparent;
+		border: none;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 1em;
+		cursor: pointer;
+		outline: none;
+	}
+		#nav ul li button:hover {
+			color: #ffffff;
+		}
+
+#header {
+	text-align: center;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("https://images6.alphacoders.com/344/344424.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+    font-size: 2.5em;
+    padding: 3em 0;
+}
+
+.inner {
+	color: #ffffff;
+}
+
+.inner h1 {
+	font-size: 2em;
+}
+
+.inner button {
+	background-color: Transparent;
+    border: 1px solid #ffffff;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 2em;
+	transition: 2s ease;
+}
+
+.inner button:hover {
+	background-color: #e7e7e7;
+}
+
+.inner button a {
+	padding: 2em;
+	text-decoration: none;
+    font-size: 2em;
+    color: #ffffff;
+    transition: 1s ease;
+}
+
+.inner button a:hover {
+	color: #000000;
+}
+
+#gallery {
+	position: relative;
+	background-color: #dcdcdc;
+	text-align: center;
+	padding: 2em 0;
+}
+#gallery h1 {
+	font-size: 2em;
+}
+#gallery button {
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #19B5FE;
+	border: none;
+	transition: 1s ease;
+	outline: none;
+}
+#gallery button:hover {
+	background-color: #1E90FF;
+}
+#gallery button a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.5em;
+	padding: 1em;
+}
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 3em;
+	overflow: hidden;
+}
+.media {
+	width: 25%;
+	overflow: hidden;
+}
+.media img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	transition: 1s ease;
+}
+.media img:hover {
+	transform: scale(1.2);
+}
+
+.fancybox-button--thumbs {
+	display: none;
+}
+
+#footer {
+	display: flex;
+}
+#about {
+	width: 50%;
+	padding: 2em 5em;
+	text-align: left;
+	background-color: #F0F8FF;
+	color: #000000;
+}
+#about h1,
+#contact h1 {
+	font-size: 1.5em;
+	line-height: 3;
+}
+#about p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+#contact {
+	width: 50%;
+	padding: 2em 5em;
+}
+#fields {
+	display: flex;
+	margin-bottom: 1em;
+}
+.field {
+	width: 50%;
+}
+.field input {
+	width: 90%;
+	padding: 0.5em;
+	height: 2em;
+	margin: 0.5em 0;
+	background-color: #F0F8FF;
+	border: 1px solid #19B5FE;
+}
+.area textarea {
+	width: 95%;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	background-color: #F0F8FF;
+	border: 1px solid #19B5FE;
+}
+label {
+	margin: 0 0 1em 0;
+}
+.icons ul {
+	display: flex;
+	list-style-type: none;
+	font-size: 2em;
+}
+.icons ul li {
+	padding-right: 1em;
+}
+.icons h2 {
+	margin-bottom: 1em;
+}
+.buttons ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin-top: 1em;
+}
+.buttons ul li {
+	padding-right: 1em;
+}
+#gallery .buttons h1 {
+	font-size: 3em;
+}
+.area button {
+	border: none;
+	padding: 0.5em 1em;
+	background-color: #19B5FE;
+	border-radius: 10%;
+	cursor: pointer;
+	outline: none;
+}
+#hidden {
+	display: none;
+	transition: all 2s ease-in-out;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 800px) { 
+	.media {
+		width: 50%;
+	}
+	#gallery button a {
+		font-size: 1em;
+	}
+	#footer {
+		display: block;
+	}
+	#about,
+	#contact {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#gallery .buttons h1 {
+    font-size: 2em;
+	}
+	#gallery button a {
+		padding: 0.5em;
+	}
+	.inner h1 {
+		font-size: 1.2em;
+	}
+	.inner p {
+		font-size: 0.6em;
+	}
+	.inner button {
+		padding: 0.3em;
+	}
+	.inner button a {
+		padding: 1em;
+		font-size: 1.5em;
+	}
+	#fields {
+		display: block;
+	}
+	.field {
+		width: 100%;
+	}
+	.area textarea {
+		width: 90%;
+	}
+	.buttons ul {
+		display: block;
+	}
+	.buttons ul li {
+		padding-right: 0;
+		margin-top: 5px;
+	}
+	#gallery button {
+		border-radius: 5px;
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.media {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	#nav {
+		font-size: 1.5em;
+	}
+}
